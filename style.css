@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel{
+    padding: 10px 80px;
+    height: 300px;
+}
+
+.carousel .carousel-inner{
+    height: 100%;
+}
+
+.carousel .carousel-item{
+    height: 100%;
+}
+
+.carousel .carousel-item img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.home_page{
+    background-color: #f1f3f6;
+    min-height: 100vh;
+    padding-bottom: 1px;
+}
+
+.navigation{
+    /* width: 100vw; */
+}
+
+.nav{
+    /* padding: 10px; */
+    /* width: 100%; */
+    background-color: #2874f0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.flipkart_logo{
+    margin: 0 6px;
+}
+
+.flipkart_img{
+    height: 30px;
+}
+
+.more_arrow{
+    height: 20px;
+    color: black;
+}
+
+.flipkart_logo .flipkart_img{
+    width: 80px;
+    height: 21px;
+    margin-bottom: -6px;
+}
+
+.explore_plus{
+    /* background-color: red; */
+}
+
+.explore_home{
+    font-style: italic;
+    color: white;
+    font-size: 12px;
+}
+
+.home_plus{
+    width: 15px;
+}
+
+.search_bar{
+    position: relative;
+    width: 600px;
+    margin: 0 5px;
+}
+
+.search_svg{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.search_bar input{
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.navbar_cart_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_cart_section button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    color: #2874f0;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navbar_cart_section .more{
+    cursor: pointer;
+}
+
+.more_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more_arrow{
+    transform: rotate(-90deg);
+    margin-left: 10px;
+    transition: transform 0.2s linear;
+}
+
+.cart_svg{
+    margin-left: 10px;
+}
+
+.more:hover .more_arrow{
+    transform: rotate(90deg);
+}
+
+.navbar_cart_section ul{
+    list-style: none;
+    display: flex;
+    margin: 0 20px;
+    
+}
+
+.navbar_cart_section ul li{
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+}
+
+.navbar_cart_section ul li:nth-child(1){
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* navbar-menu */
+.navbar_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 0px 30px;
+    width: 100%;
+    box-shadow: 0px 8px 16px -15px black;
+    position: relative;
+    z-index: inherit;
+}
+
+.navbar_menu .menubar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.navbar_menu .menubar .menu_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    padding: 10px;
+}
+
+.menu_card:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    left: -30px;
+    /* bottom: 0px; */
+    background-color: #fff;
+    top: 95px;
+    border: none;
+    box-shadow: 0 4px 16px 0 rgb(0 0 0/20%);
+}
+
+.menu_card .dropdown-menu .dropdown-item{
+    padding: 10px;
+    width: auto;
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+
+.menu_card .dropdown-menu .dropdown-item:hover{
+    color: #2874f0;
+}
+
+.navbar_menu .menubar .menu_card:hover{
+    color: #2874f0;
+}
+
+
+.navbar_menu .menubar .menu_card .card_title{
+    font-size: 15px;
+}
+
+.navbar_menu .menubar .menu_card img{
+    height: 60px;
+}
+
+/* Deal Section */
+.shop_section{
+    /* overflow: hidden; */
+    margin: 20px 150px;
+    display: flex;
+    position: relative;
+}
+
+.shop_section .deal_section{
+    background-color: #fff;
+    margin: 0 5px;
+    overflow: hidden;
+    box-shadow: 0 0 36px -27px black;
+    width: 82%;
+}
+
+.shop_section .deal_section .deal_next_button{
+    position: absolute;
+    right: 268px;
+    top: 35%;
+}
+
+
+.shop_section .deal_section .deal_next_button button{
+    /* padding: 25px 6px; */
+    width: 47px;
+    height: 104px;
+    background-color: #fffffffa;
+    border: none;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);
+    border-radius: 4px 0px 0px 4px;
+}
+
+
+.shop_section .deal_section .deal_next_button img{
+    width: 40px;
+}
+
+.shop_section .deal_section_ad{
+    /* width: 50px; */
+    height: 400px;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 0 36px -27px black;
+}
+
+
+.shop_section .deal_section_ad img{
+    /* width: 50px; */
+    height: 100%;
+}
+
+.shop_section .deal_section .deal_header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.073);
+    padding: 12px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop_section .deal_section .deal_header .deals_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.shop_section .deal_section .deal_header button{
+    padding: 10px 18px;
+    background-color: #2874f0;   
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 2px;
+    box-shadow: 0px 0px 20px -10px black;
+}
+
+.shop_section .deal_section .deal_header h2{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.deal_section .deal_header .deal_timer{
+    display: flex;
+    color: #1e1e1e69;
+    font-weight: 500;
+}
+
+.deal_section .deal_header img{
+    margin-right: 8px;
+}
+
+.deal_section .deal_header .deal_time_clock{
+    height: 18px;
+    margin-left: 10px;
+}
+
+.deal_card{
+    display: flex;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.deal_shop_card{
+    width: 230px;
+    margin: 0 2px;
+    height: fit-content;
+    padding: 22px;
+    /* background-color: red; */
+    cursor: pointer;
+}
+
+.deal_shop_card:hover .deal_shop_img{
+    transform: scale(1.1);
+}
+
+
+.deal_shop_card .deal_shop_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 22px;
+}
+
+.deal_shop_card .deal_shop_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.deal_card .deal_shop_info{
+    display: grid;
+    place-items: center;
+}
+
+.deal_shop_info .deal_shop_brand_name{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.deal_shop_info .deal_shop_brand_offer{
+    color: #388e3c;
+    margin: 5px 0;
+}
+
+.deal_shop_info .deal_categories{
+    opacity: 0.6;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Book and Music Instruments */
+.shop_section .deal_width{
+    width: 100%;
+}
+
+.shop_section .deals_info_para{
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 13px;
+}
+
