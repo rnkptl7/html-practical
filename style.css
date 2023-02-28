@@ -403,3 +403,127 @@
     font-size: 13px;
 }
 
+
+/* Responsive 800 to 1180 */
+
+@media (min-width: 800px) and (max-width: 1180px) {
+    body{
+        background-color: red;
+    }
+    .carousel {
+        padding: 10px 4px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .search_bar{
+        margin: 5px 0;
+        width: 400px;
+    }
+    .navbar_cart_section ul li {
+        width: 100px;
+    }
+    .navbar_menu {
+        padding: 10px 0px;
+    }
+    .navbar_menu .menubar {
+        width: 95%;
+    }
+    .navbar_menu .menubar .menu_card img {
+        height: 60px;
+    }
+    .navbar_menu .menubar .menu_card .card_title {
+        font-size: 12px;
+    }
+    .shop_section {
+        margin: 20px 0px;
+    }  
+    .shop_section .deal_section .deal_header {
+        padding: 12px 22px;
+    } 
+    .shop_section .deal_section .deal_header h2 {
+        font-size: 20px;
+    } 
+    .shop_section .deal_section .deal_next_button{
+        right: 213px;
+    }
+    .deal_shop_card {
+        width: 174px;
+        margin: 0 2px;
+        padding: 10px 6px;
+    }
+    .deal_shop_card .deal_shop_img {
+        height: 117px;
+        padding: 6px;
+    }
+    .deal_shop_info .deal_shop_brand_name {
+        font-size: 13px;
+        text-align: center;
+    }
+    .deal_shop_info .deal_shop_brand_offer {
+        font-size: 15px;
+        text-align: center;
+    }
+    .deal_shop_info .deal_categories {
+        font-size: 12px;
+    }
+    .shop_section .deal_section_ad {
+        height: 316px;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 799px){
+    .search_bar{
+        width: 200px;
+        margin-left: 10px;
+    }
+    .navbar_cart_section ul li {
+        width: 80px;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .navbar_menu {
+        padding: 0px;
+    }
+    .navbar_cart_section button {
+        font-size: 14px;
+    }
+    .navbar_menu .menubar {
+        width: 90%;
+    }
+    .carousel {
+        padding: 7px 0px;
+        height: 150px;
+    }
+
+    .shop_section{
+        margin: 20px 0px;
+    }
+    .shop_section .deal_section {
+        width: 100%;
+        overflow: scroll;
+    }
+    .shop_section .deal_section .deal_header {
+        padding: 12px 9px;
+    }
+    .shop_section .deal_section .deal_header button{
+        padding: 7px 16px;
+        font-size: 15px;
+    }
+    .deal_shop_card {
+        width: 202px;
+        padding: 10px;
+    }
+} 
+
+@media (max-width: 783px){
+    .shop_section .deal_section_ad {
+        display: none;
+    }
+    .shop_section .deal_section .deal_next_button{
+        right: 0px;
+    }
+    .search_svg{
+        background-color: #ffffff;
+    }
+}
