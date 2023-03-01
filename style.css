@@ -472,14 +472,26 @@
     }
 }
 
-@media (min-width: 430px) and (max-width: 799px){
+@media (min-width: 280px) and (max-width: 799px){
+    .flipkart_logo {
+        margin: 0;
+    }
+    .shop_section .deal_section .deal_header h2 {
+        font-size: 18px;
+    }
+    .deal_section .deal_header .deal_time_clock {
+        height: 14px;
+    }
+    .deal_section .deal_header .deal_timer {
+        font-size: 15px;
+    }
     .search_bar{
         width: 200px;
         margin-left: 10px;
     }
     .navbar_cart_section ul li {
-        width: 80px;
-        margin-top: 10px;
+        width: 65px;
+        /* margin-top: 10px; */
         font-size: 15px;
     }
     .navbar_menu {
@@ -506,9 +518,9 @@
     .shop_section .deal_section .deal_header {
         padding: 12px 9px;
     }
-    .shop_section .deal_section .deal_header button{
-        padding: 7px 16px;
-        font-size: 15px;
+    .shop_section .deal_section .deal_header button {
+        padding: 5px 12px;
+        font-size: 14px;
     }
     .deal_shop_card {
         width: 202px;
@@ -525,5 +537,33 @@
     }
     .search_svg{
         background-color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .navbar{
+        justify-content: start;
+    }
+    .deal_section .deal_header .deal_time_clock {
+        height: 12px;
+    }
+    .deal_section .deal_header .deal_timer {
+        font-size: 13px;
+    }
+    .navbar_cart_section ul li {
+        width: 66px;
+    }
+    .flipkart_logo {
+        margin-left: 12px;
+    }
+    .search_bar {
+        width: 180px;
+    }
+    .shop_section .deal_section .deal_header h2 {
+        font-size: 13px;
+    }
+    .shop_section .deal_section .deal_header button {
+        padding: 5px 12px;
+        font-size: 14px;
     }
 }
